@@ -3,6 +3,7 @@ In the scenario of calculating the navigation goal with requirement of pose & or
 
 This is mainly desgined for navigation stack on UGV, you may use it to sort the orientation out.
 
+
 ## Magic of atan(delta y, delta x)
 The simple trick here is to calculate the change in angle on the z plane and rotate accordingly on (r,p,y) orientation.
 1. conver current quaternion orientation (x,w,z,w) to euler orientation (roll,pitch,theta)
@@ -10,3 +11,6 @@ The simple trick here is to calculate the change in angle on the z plane and rot
 3. new_theta = theta + theta'
 4. convert (roll,pitch,new_theta) to quaternion (x,y,z,w)
 4. publish new GoalStamp
+
+## **atan2** visualisation (x,y) is w.r.t the direction pointing long the x direction.
+![image](https://exceljet.net/sites/default/files/images/functions/inline/exceljet_atan2_versus_atan_0.png)
