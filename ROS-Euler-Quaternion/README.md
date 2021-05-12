@@ -29,5 +29,4 @@ w: 1.0"
 euler: [0.0, -0.0, 1.3443184674042765]
 ```
 
-T
 [Learn how to write ROS Service in python](http://wiki.ros.org/ROS/Tutorials/WritingServiceClient%28python%29)
