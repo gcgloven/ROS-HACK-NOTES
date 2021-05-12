@@ -2,14 +2,15 @@
 
 Many times, you will be dumbfounded by ROS's Orientaton calculation in your program or code. 
 
-For an example, some MPC for UAVs may take Euler based orientation to handle movement planning while Gazebo ROS models takes Quaternion based orientation.
 
 ## [Euler Quaternion Visualization](https://quaternions.online/) 
 
 ![rpy_of_uav](./animation.gif)
 
 
-## How are you going to make them communication?
+For an example, some MPC for UAVs may take Euler based orientation to handle movement planning while Gazebo ROS models takes Quaternion based orientation.
+
+## How are you going to make them communicate?
 You may use TF transformation package to help you http://wiki.ros.org/tf2.
 The resaon I use tf in my example service file is that my set up runs ROS Melodic and my UAV's MPC runs on python3.6 while my ROS package was built with Python2.
 
